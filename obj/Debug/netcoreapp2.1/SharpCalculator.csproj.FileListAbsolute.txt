@@ -1,0 +1,11 @@
+/Users/macuser/codefellows/401/C#/SharpCalculator/bin/Debug/netcoreapp2.1/SharpCalculator.deps.json
+/Users/macuser/codefellows/401/C#/SharpCalculator/bin/Debug/netcoreapp2.1/SharpCalculator.runtimeconfig.json
+/Users/macuser/codefellows/401/C#/SharpCalculator/bin/Debug/netcoreapp2.1/SharpCalculator.runtimeconfig.dev.json
+/Users/macuser/codefellows/401/C#/SharpCalculator/bin/Debug/netcoreapp2.1/SharpCalculator.dll
+/Users/macuser/codefellows/401/C#/SharpCalculator/bin/Debug/netcoreapp2.1/SharpCalculator.pdb
+/Users/macuser/codefellows/401/C#/SharpCalculator/obj/Debug/netcoreapp2.1/SharpCalculator.csprojAssemblyReference.cache
+/Users/macuser/codefellows/401/C#/SharpCalculator/obj/Debug/netcoreapp2.1/SharpCalculator.csproj.CoreCompileInputs.cache
+/Users/macuser/codefellows/401/C#/SharpCalculator/obj/Debug/netcoreapp2.1/SharpCalculator.AssemblyInfoInputs.cache
+/Users/macuser/codefellows/401/C#/SharpCalculator/obj/Debug/netcoreapp2.1/SharpCalculator.AssemblyInfo.cs
+/Users/macuser/codefellows/401/C#/SharpCalculator/obj/Debug/netcoreapp2.1/SharpCalculator.dll
+/Users/macuser/codefellows/401/C#/SharpCalculator/obj/Debug/netcoreapp2.1/SharpCalculator.pdb
