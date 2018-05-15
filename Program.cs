@@ -29,22 +29,22 @@ namespace SharpCalculator
       {
         case "1": 
         Answer = FirstNum + SecondNum;
-        Console.Write("The answer is ", Answer);
+        Console.Write("The answer is {0}", Answer);
         break;
 
         case "2":
         Answer = FirstNum - SecondNum;
-        Console.Write("The answer is ", Answer);
+        Console.Write("The answer is {0}", Answer);
         break;
 
         case "3":
         Answer = FirstNum * SecondNum;
-        Console.Write("The answer is ", Answer);
+        Console.Write("The answer is {0}", Answer);
         break;
 
         case "4":
         Answer = FirstNum / SecondNum;
-        Console.Write("The answer is ", Answer);
+        Console.Write("The answer is {0}", Answer);
         break;
       }
       Console.ReadLine();
