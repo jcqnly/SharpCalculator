@@ -28,19 +28,19 @@ namespace SharpCalculator
       switch (Choice)
       {
         case "1": 
-        Answer = FirstNum + SecondNum;
+        Console.Write(Answer = FirstNum + SecondNum);
         break;
 
         case "2":
-        Answer = FirstNum - SecondNum;
+        Console.Write(Answer = FirstNum - SecondNum);
         break;
 
         case "3":
-        Answer = FirstNum * SecondNum;
+        Console.Write(Answer = FirstNum * SecondNum);
         break;
 
         case "4":
-        Answer = FirstNum / SecondNum;
+        Console.Write(Answer = FirstNum / SecondNum);
         break;
       }
     }
