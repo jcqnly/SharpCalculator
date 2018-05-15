@@ -28,8 +28,8 @@ namespace SharpCalculator
       switch (Choice)
       {
         case "1": 
-        Answer = FirstNum + SecondNum;
-        Console.Write("The answer is {0}", Answer);
+        // Answer = FirstNum + SecondNum;
+        Console.Write("The answer is {0}", Answer = FirstNum + SecondNum);
         break;
 
         case "2":
