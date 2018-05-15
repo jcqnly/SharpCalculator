@@ -7,10 +7,15 @@ namespace SharpCalculator
     static void Main(string[] args)
     {
       Console.WriteLine("Calculate 2 numbers!\n");
-      bool exit = false;
 
-      do
-      {
+      Console.Write("What's the first number?\n");
+      string FirstInput = Console.ReadLine();
+      int FirstNum = int.Parse(FirstInput);
+
+      Console.Write("What's the second number?\n");
+      string SecondInput = Console.ReadLine();
+      int SecondNum = int.Parse(SecondInput);
+
       Console.WriteLine("What would you like to do? Choose a number\n" +
                         "1 - add\n" +
                         "2 - subtract\n" +
@@ -18,71 +23,26 @@ namespace SharpCalculator
                         "4 - divide\n" +
                         "5 - exit\n");
       string Choice = Console.ReadLine();
-            
-      double Total = 0;
+      int Answer;
 
-        if (Choice == "1")
-        {
-          Console.Write("What's the first number?\n");
-          string FirstInput = Console.ReadLine();
-          int FirstNum = int.Parse(FirstInput);
+      switch (Choice)
+      {
+        case "1": 
+        Answer = FirstNum + SecondNum;
+        break;
 
-          Console.Write("What's the second number?\n");
-          string SecondInput = Console.ReadLine();
-          int SecondNum = int.Parse(SecondInput);
+        case "2":
+        Answer = FirstNum - SecondNum;
+        break;
 
-          Total = FirstNum + SecondNum;
-                    Console.WriteLine("The answer is " + Total);
-        }
-                
-        if (Choice == "2")
-        {
-          Console.Write("What's the first number?\n");
-          string FirstInput = Console.ReadLine();
-          int FirstNum = int.Parse(FirstInput);
+        case "3":
+        Answer = FirstNum * SecondNum;
+        break;
 
-          Console.Write("What's the second number?\n");
-          string SecondInput = Console.ReadLine();
-          int SecondNum = int.Parse(SecondInput);
-
-          Total = FirstNum - SecondNum;
-          Console.WriteLine("The answer is " + Total);
-        }
-
-        if (Choice == "3")
-        {
-          Console.Write("What's the first number?\n");
-          string FirstInput = Console.ReadLine();
-          int FirstNum = int.Parse(FirstInput);
-
-          Console.Write("What's the second number?\n");
-          string SecondInput = Console.ReadLine();
-          int SecondNum = int.Parse(SecondInput);
-
-          Total = FirstNum * SecondNum;
-          Console.WriteLine("The answer is " + Total);
-        }
-
-        if (Choice == "4")
-        {
-          Console.Write("What's the first number?\n");
-          string FirstInput = Console.ReadLine();
-          int FirstNum = int.Parse(FirstInput);
-
-          Console.Write("What's the second number?\n");
-          string SecondInput = Console.ReadLine();
-          int SecondNum = int.Parse(SecondInput);
-
-          Total = FirstNum / SecondNum;
-          Console.WriteLine("The answer is " + Total);
-                }
-        if (Choice == "5")
-        {
-          exit = true;
-        }
-
-        Console.ReadLine();
-      } while (exit != true);  
+        case "4":
+        Answer = FirstNum / SecondNum;
+        break;
+      }
     }
   }
 }
