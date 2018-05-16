@@ -7,7 +7,9 @@ namespace SharpCalculator
     static void Main(string[] args)
     {
       Console.WriteLine("Bestest Calculator Will Calculate");
-      Choices();
+ 
+      WhichChoice();
+      // UserNumbers();
       /*Console.WriteLine("Calculate 2 numbers!\n");
 
       Console.Write("What's the first number?\n");
@@ -61,36 +63,58 @@ namespace SharpCalculator
       int selection = int.Parse(Console.ReadLine()); 
       return selection;
     }
-    public int WhichChoice()
+    // static public int UserNumbers()
+    // {
+    //   Console.Write("What's the first number?\n");
+    //   int firstNum = int.Parse(Console.ReadLine());
+
+    //   Console.Write("What's the second number?\n");
+    //   int secondNum = int.Parse(Console.ReadLine());
+
+    //   return (firstNum, secondNum);
+    // }
+
+    static public void WhichChoice()
     {
+      Console.Write("What's the first number?\n");
+      int firstNum = int.Parse(Console.ReadLine());
+
+      Console.Write("What's the second number?\n");
+      int secondNum = int.Parse(Console.ReadLine());
       int selection = Choices();
 
       switch (selection)
       {
         case 1: 
-
+          Console.WriteLine(Add(firstNum, secondNum));
         break;
 
-        case 2:
+        // case 2:
+        //   Subtract();
+        // break;
 
-        break;
+        // case 3:
+        //   Multiply();
+        // break;
 
-        case 3:
+        // case 4:
+        //   Divide();
+        // break;
 
-        break;
+        // case 5:
 
-        case 4:
-
-        break;
-
-        case 5:
-
-        break;
+        // break;
 
         default:
-
+          Choices();
         break;
       }
+    }
+
+    public static int Add(int x, int y)
+    {
+      int z = x + y;
+      return z;
     }
   }
 }
