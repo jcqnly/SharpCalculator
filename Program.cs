@@ -6,80 +6,27 @@ namespace SharpCalculator
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Bestest Calculator Will Calculate");
- 
+      Console.WriteLine("Bestest Calculator Will Calculate...");
       WhichChoice();
-      // UserNumbers();
-      /*Console.WriteLine("Calculate 2 numbers!\n");
-
-      Console.Write("What's the first number?\n");
-      string FirstInput = Console.ReadLine();
-      int FirstNum = int.Parse(FirstInput);
-
-      Console.Write("What's the second number?\n");
-      string SecondInput = Console.ReadLine();
-      int SecondNum = int.Parse(SecondInput);
-
-      Console.WriteLine("What would you like to do? Choose a number\n" +
-                        "1 - add\n" +
-                        "2 - subtract\n" +
-                        "3 - multiply\n" +
-                        "4 - divide\n" +
-                        "5 - exit\n");
-      string Choice = Console.ReadLine();
-      int Answer;
-
-      switch (Choice)
-      {
-        case "1": 
-        Console.Write("The answer is {0}", Answer = FirstNum + SecondNum);
-        break;
-
-        case "2":
-        Console.Write("The answer is {0}", Answer = FirstNum - SecondNum);
-        break;
-
-        case "3":
-        Console.Write("The answer is {0}", Answer = FirstNum * SecondNum);
-        break;
-
-        case "4":
-        Console.Write("The answer is {0}", Answer = FirstNum / SecondNum);
-        break;
-
-        default:
-        break;
-      }
-      Console.ReadLine();*/
     }
+
     static public int Choices()
     {
       Console.WriteLine("What would you like to do? Choose a number\n" +
                         "1 - add\n" +
                         "2 - subtract\n" +
                         "3 - multiply\n" +
-                        "4 - divide\n" +
-                        "5 - exit\n");
+                        "4 - divide\n");
       int selection = int.Parse(Console.ReadLine()); 
       return selection;
     }
-    // static public int UserNumbers()
-    // {
-    //   Console.Write("What's the first number?\n");
-    //   int firstNum = int.Parse(Console.ReadLine());
-
-    //   Console.Write("What's the second number?\n");
-    //   int secondNum = int.Parse(Console.ReadLine());
-
-    //   return (firstNum, secondNum);
-    // }
 
     static public void WhichChoice()
     {
-      Console.Write("What's the first number?\n");
+      Console.Write("the first number:\n");
       int firstNum = int.Parse(Console.ReadLine());
 
-      Console.Write("What's the second number?\n");
+      Console.Write("and the second number:\n");
       int secondNum = int.Parse(Console.ReadLine());
 
       int selection = Choices();
@@ -102,12 +49,9 @@ namespace SharpCalculator
           Console.WriteLine("The answer is: " + Divide(firstNum, secondNum));
         break;
 
-        // case 5:
-
-        // break;
-
         default:
-          Choices();
+          Console.WriteLine("Not valid. Select again.");
+          WhichChoice();
         break;
       }
     }
