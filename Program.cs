@@ -94,9 +94,9 @@ namespace SharpCalculator
           Console.WriteLine("The answer is: " + Subtract(firstNum, secondNum));
         break;
 
-        // case 3:
-        //   Multiply();
-        // break;
+        case 3:
+          Console.WriteLine("The answer is: " + Multiply(firstNum, secondNum));
+        break;
 
         // case 4:
         //   Divide();
@@ -121,6 +121,12 @@ namespace SharpCalculator
     public static int Subtract(int x, int y)
     {
       int z = x - y;
+      return z;
+    }
+
+    public static int Multiply(int x, int y)
+    {
+      int z = x * y;
       return z;
     }
 
