@@ -81,17 +81,18 @@ namespace SharpCalculator
 
       Console.Write("What's the second number?\n");
       int secondNum = int.Parse(Console.ReadLine());
+
       int selection = Choices();
 
       switch (selection)
       {
         case 1: 
-          Console.WriteLine(Add(firstNum, secondNum));
+          Console.WriteLine("The answer is: " + Add(firstNum, secondNum));
         break;
 
-        // case 2:
-        //   Subtract();
-        // break;
+        case 2:
+          Console.WriteLine("The answer is: " + Subtract(firstNum, secondNum));
+        break;
 
         // case 3:
         //   Multiply();
@@ -116,5 +117,12 @@ namespace SharpCalculator
       int z = x + y;
       return z;
     }
+
+    public static int Subtract(int x, int y)
+    {
+      int z = x - y;
+      return z;
+    }
+
   }
 }
