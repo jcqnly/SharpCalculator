@@ -22,7 +22,7 @@ namespace SharpCalculator
 
     static public void WhichChoice(int selection)
     {
-      Console.WriteLine("Bestest Calculator Will Calculate...");
+      Console.WriteLine("Bestest Calculator Will Calculate...\n");
       Console.Write("the first number:\n");
       int firstNum = int.Parse(Console.ReadLine());
 
