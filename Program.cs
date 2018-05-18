@@ -6,11 +6,10 @@ namespace SharpCalculator
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Bestest Calculator Will Calculate...");
-      WhichChoice();
+      Choices();
     }
 
-    static public int Choices()
+    static public void Choices()
     {
       Console.WriteLine("What would you like to do? Choose a number\n" +
                         "1 - add\n" +
@@ -18,18 +17,17 @@ namespace SharpCalculator
                         "3 - multiply\n" +
                         "4 - divide\n");
       int selection = int.Parse(Console.ReadLine()); 
-      return selection;
+      WhichChoice(selection);
     }
 
-    static public void WhichChoice()
+    static public void WhichChoice(int selection)
     {
+      Console.WriteLine("Bestest Calculator Will Calculate...\n");
       Console.Write("the first number:\n");
       int firstNum = int.Parse(Console.ReadLine());
 
       Console.Write("and the second number:\n");
       int secondNum = int.Parse(Console.ReadLine());
-
-      int selection = Choices();
 
       switch (selection)
       {
@@ -49,9 +47,12 @@ namespace SharpCalculator
           Console.WriteLine("The answer is: " + Divide(firstNum, secondNum));
         break;
 
+        case 5:
+        Environment.Exit(0);
+        break;
+
         default:
           Console.WriteLine("Not valid. Select again.");
-          WhichChoice();
         break;
       }
     }
