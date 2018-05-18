@@ -5,7 +5,7 @@ namespace SharpCalculator
   class Program
   {
     static void Main(string[] args)
-    {
+    {//invokes the method where the user is asked what they'd like to do
       Choices();
     }
 
@@ -16,8 +16,9 @@ namespace SharpCalculator
                         "2 - subtract\n" +
                         "3 - multiply\n" +
                         "4 - divide\n");
-      int selection = int.Parse(Console.ReadLine()); 
+      int selection = int.Parse(Console.ReadLine()); //choice needs to be changed to an int
       WhichChoice(selection);
+      //that choice is then passed as a parameter to the method that will call the specific methods that will calculate the user numbers
     }
 
     static public void WhichChoice(int selection)
@@ -30,7 +31,7 @@ namespace SharpCalculator
       int secondNum = int.Parse(Console.ReadLine());
 
       switch (selection)
-      {
+      {//each case calls the particular method with the user input passed in
         case 1: 
           Console.WriteLine("The answer is: " + Add(firstNum, secondNum));
         break;
@@ -47,18 +48,18 @@ namespace SharpCalculator
           Console.WriteLine("The answer is: " + Divide(firstNum, secondNum));
         break;
 
-        case 5:
+        case 5://exits the program
         Environment.Exit(0);
         break;
 
-        default:
+        default://a catch in case the user doesn't select an option
           Console.WriteLine("Not valid. Select again.");
         break;
       }
     }
 
     public static int Add(int x, int y)
-    {
+    {//each of the following method calculates the user input and returns the answer
       int z = x + y;
       return z;
     }
